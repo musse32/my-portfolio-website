@@ -126,12 +126,12 @@ a:focus {
 }
 
 /* Position text in the middle */
-.middle {
+/*.middle {
   position: absolute;
   top: 50%;
   left: 50%;
   text-align: center;
-}
+}*/
 
 /* Style the <hr> element */
 hr {
