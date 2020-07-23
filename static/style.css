@@ -131,7 +131,7 @@ a:focus {
   font-family: Arial;
   font-size: 15px;
   font-weight: bold;
-  padding: 0px 23px;
+  padding: 9px 23px;
   text-decoration: none;
 }
 .myButton:hover {
