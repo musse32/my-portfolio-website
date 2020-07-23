@@ -19,7 +19,7 @@ def projects():
 
 @app.route('/covid_map')
 def map():
-    return render_template('folium_covid_heat_map.html')
+    return render_template('folium_covid_map.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
