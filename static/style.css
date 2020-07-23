@@ -21,6 +21,25 @@ nav {
   font-size: 56px;
 }
 
+
+.header-background-image {
+    background: no-repeat center;
+    background-size: cover!important;
+    -moz-background-size: cover!important;
+    -webkit-background-size: cover!important;
+}
+
+.main-navigation {
+    position: relative;
+    display: block;
+    width: 100%;
+    clear: both;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    background: #313131;
+    background: hsl(0, 0%, 19%);
+}
+
 .container-lg {
   max-width: 1012px;
   margin-right: auto;
