@@ -129,7 +129,7 @@ a:focus {
   border: 1px solid #566963;
   display: inline-block;
   cursor: pointer;
-  color: #272727;
+  color: white;
   font-family: Arial;
   font-size: 15px;
   font-weight: bold;
@@ -137,8 +137,8 @@ a:focus {
   text-decoration: none;
 }
 .myButton:hover {
-  background: linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
-  background-color: #6c7c7c;
+  background: white;
+  background-color: white;
 }
 .myButton:active {
   position: relative;
