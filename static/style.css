@@ -59,7 +59,7 @@ nav {
   overflow: auto;
 }
 h2 {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
   font-family: Averta, sans-serif;
   font-size: 22px;
@@ -113,7 +113,7 @@ a:focus {
 }
 
 .content {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .social-icon {
@@ -131,7 +131,7 @@ a:focus {
   font-family: Arial;
   font-size: 15px;
   font-weight: bold;
-  padding: 9px 23px;
+  padding: 0px 23px;
   text-decoration: none;
 }
 .myButton:hover {
