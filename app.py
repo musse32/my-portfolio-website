@@ -23,7 +23,7 @@ def map():
 
 @app.route('/resume')
 def resume():
-    return render_template('resume.hmtl')
+    return render_template('resume.html')
 
 
 if __name__ == '__main__':
