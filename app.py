@@ -21,6 +21,10 @@ def projects():
 def map():
     return render_template('folium_covid_map.html')
 
+@app.route('/resume')
+def resume():
+    return render_template('resume.hmtl')
+
 
 if __name__ == '__main__':
     app.run(debug=False)
