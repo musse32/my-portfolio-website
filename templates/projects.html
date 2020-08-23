@@ -1,0 +1,152 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="/static/style.css" />
+
+  <title>Hamza Musse</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="">
+      <nav class="nav main-navigation">
+        <h2>
+          <a href="{{url_for('home')}}" class="myButton">Home</a>
+          <a href="{{url_for('projects')}}" class="myButton">Projects</a>
+         <a href="{{ url_for('resume') }}" class="myButton">Resume</a>
+               <a href="https://www.linkedin.com/in/hamzamusse">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                style="float: right; text-align: center;margin: auto;"
+                class="myButton"
+              >
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  fill= white
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+            <a href="https://github.com/musse32">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                style="float: right; text-align: center;"
+                class="myButton"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  fill="white"
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+        </h2>
+      </nav>
+    </div>
+      <div class="middle">
+        <div class="list-group container-lg px-3 my-5 markdown-body">
+          <ul style="list-style-type: none;">
+            <li href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+              <div class="d-flex w-250 justify-content-between">
+                <h2 class="mb-1">Spread of COVID-19 Deaths Across the 48 Contiguous States</h2>
+              </div>
+             <iframe class="map", src="/covid_map" width="1000" height="500"></iframe>
+              <h5 class="mb-1">Data Source: mongodb+srv://readonly:readonly@covid-19.hip2i.mongodb.net/covid19</h5>
+              <p class="mb-1"><strong>Summary:</strong> I connected to a public MongoDB Cloud Atlas database containing data on COVID-19 collected by Johns's Hopkins University. I created a data pipeline using python to query the database (pymongo), clean the data, and transform to generate the cumulative sum of deaths for each state over time. This map represents the growing total death counts due to COVID-19 for the 48 Contiguous US States. Slide the top bar to show which states suffered the  most death over the time period. The time period starts with the first recorded death in the US and is automatically updated every Sunday.</p>
+            <br>
+            <h5>Skills and tools: Python, MongoDB, HTML, Data Engineering, Data Visualization</h5>
+            </li>
+            <br>
+            <hr>
+            <br>
+            <li href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+              <div class="d-flex w-250 justify-content-between">
+                <h2 class="mb-1">Tableau Data Analysis: Test Scores in Hartford, CT</h2>
+              </div>
+              <iframe src="https://public.tableau.com/views/CTSchoolScores/Sheet1?:showVizHome=no&:embed=true" width="1000"
+                height="500"></iframe>
+              <h5 class="mb-1">Data Source: https://catalog.data.gov/dataset/sat-district-participation-and-performance-2012-2013</h5>
+              <p class="mb-1"><strong>Summary:</strong> I downloaded State of Connecticut data from <a href="https://www.data.gov/"><u>Data.gov</u></a> to conduct analysis on student test scores in the Hartford Public School District.</p>
+            <br>
+            <h5>Skills and tools: Tableau, Data Mining and Data Analysis</h5>
+            </li>
+            <br>
+            <hr>
+            <br>
+            <li class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h2 class="mb-1">2048 Game: An exercise in Object-Oriented Programming </h2>
+               
+              </div>
+              <iframe  width="100%" src="https://funhtml5games.com?embed=2048bit" style="width:530px;height:690px;border:none;" frameborder="0" scrolling="no"></iframe>
+              <h5>Frontend Interface provided by <a href="https://funhtml5games.com/?play=2048bit"><u>FunHTMLGames</u></a>.</h5>
+              <p class="text-muted"><strong>Summary:</strong> As part of an online course at Rice University, I created the backend logic to the 2048 Game. The board logic was creating using a single Python class, TwentyFortyEight, and applies the principles of OOP.</p>
+              <p class="text-muted">The TwentyFortyEight class consists of several functions that manipulate the board such as <code class="code">__init__()</code>, <code class="code">reset()</code>, and most importantly <code class="code">move()</code>. The backend code is available on my <a href="https://github.com/musse32/python-2048"><u>Github</u></a>.</p>
+            <br>
+            <h5>Skills and tools: Python, OOP, Data Structures</h5>
+            </li>
+            <br>
+            <hr>
+            <br>
+            <li class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h2 class="mb-1">Machine Learning Competition: Predicting Faulty Wells</h2>
+              </div>
+              <img src="static/drivendata.png" alt="">    
+              <p class="text-muted"><strong>Summary:</strong> I participated in a Data Science competition hosted by <a href="https://www.drivendata.org/"><u>DrivenData</u></a> that challenged participants to use data about wells to predict whether water pumps were functional. Using data from <a href="https://github.com/taarifa"><u>Taarifa</u></a> and the Tanzanian Ministry of Water, we predict which pumps are functional, which need some repairs, and which don't work at all. </p>
+              <p class="text-muted">I implemented a Decision Tree Classifier to predict the three classes based on a number of variables about what kind of pump is operating, when it was installed, and how it is managed. A more detailed analysis along with the code is hosted on my <a href="https://github.com/musse32/python_drivendata_classification_challenge"><u>Github</u></a>.</p>
+            <br>
+            <h5>Skills and tools: Python, Pandas, Sci-Kit Learn, Statistical Analysis</h5>
+            </li>
+            <hr>
+            <br>
+            <li>
+              <br>
+              <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="social-icon">
+                  <a href="https://www.linkedin.com/in/hamzamusse">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+                <div class="social-icon">
+                  <a href="https://github.com/musse32">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            </li>
+          </ul>
+      </div>
+    </div>
+</body>
+
+</html>
