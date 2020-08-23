@@ -2,7 +2,6 @@
 
 <head>
   <link rel="stylesheet" type="text/css" href="/static/style.css" />
-
   <title>Hamza Musse</title>
 </head>
 
@@ -14,7 +13,7 @@
           <a href="{{url_for('home')}}" class="myButton">Home</a>
           <a href="{{url_for('projects')}}" class="myButton">Projects</a>
          <a href="{{ url_for('resume') }}" class="myButton">Resume</a>
-               <a href="https://www.linkedin.com/in/hamzamusse">
+                        <a href="https://www.linkedin.com/in/hamzamusse">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
@@ -58,7 +57,11 @@
               </div>
              <iframe class="map", src="/covid_map" width="1000" height="500"></iframe>
               <h5 class="mb-1">Data Source: mongodb+srv://readonly:readonly@covid-19.hip2i.mongodb.net/covid19</h5>
-              <p class="mb-1"><strong>Summary:</strong> I connected to a public MongoDB Cloud Atlas database containing data on COVID-19 collected by Johns's Hopkins University. I created a data pipeline using python to query the database (pymongo), clean the data, and transform to generate the cumulative sum of deaths for each state over time. This map represents the growing total death counts due to COVID-19 for the 48 Contiguous US States. Slide the top bar to show which states suffered the  most death over the time period. The time period starts with the first recorded death in the US and is automatically updated every Sunday.</p>
+              <p class="mb-1"><strong>Summary:</strong> I connected to a public MongoDB Cloud Atlas database containing data on COVID-19 collected by Johns's Hopkins University.
+                I created a data pipeline using python to query the database (pymongo), clean the data, and transform to generate the cumulative sum of deaths for each 
+                state over time. This map represents the growing total death counts due to COVID-19 for the 48 Contiguous US States. 
+                Slide the top bar to show which states suffered the  most death over the time period. The time period starts with the first recorded death in the US 
+                and is automatically updated every Sunday. The project code is available on my <a href="https://github.com/musse32/covid-data-pipeline"><u>Github</u></a>.</p>
             <br>
             <h5>Skills and tools: Python, MongoDB, HTML, Data Engineering, Data Visualization</h5>
             </li>
