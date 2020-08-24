@@ -59,11 +59,8 @@ nav {
   overflow: auto;
 }
 h2 {
-<<<<<<< HEAD
-=======
   margin-top: 10px;
   margin-bottom: 10px;
->>>>>>> 167e50ac0dc88ea9125e6fea88a7da1420561b3b
   font-family: Averta, sans-serif;
   font-size: 22px;
   line-height: 36px;
@@ -140,21 +137,12 @@ a:focus {
 .myButton:hover {
   background: white;
   background-color: white;
-<<<<<<< HEAD
-  color: black;
-=======
->>>>>>> 167e50ac0dc88ea9125e6fea88a7da1420561b3b
 }
 .myButton:active {
   position: relative;
   top: 0px;
-<<<<<<< HEAD
-  background: white;
-}
-=======
 }
 
->>>>>>> 167e50ac0dc88ea9125e6fea88a7da1420561b3b
 .topleft {
   position: absolute;
   top: 0;
