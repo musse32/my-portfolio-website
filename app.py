@@ -7,6 +7,9 @@ app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'mykey' #Secret key for the forms
 
+class UpdateForm(FlaskForm):
+    update = SubmitField('Update Data')
+
 @app.route('/')
 def home():
     return render_template('home.html')
@@ -15,8 +18,12 @@ def home():
 def contact():
     return render_template('contact.html')
 
-@app.route('/projects')
+@app.route('/projects', methods=['GET', 'POST'])
 def projects():
+
+    update_form = UpdateForm()
+    if update_form.validate_on_submit:
+        pass
     return render_template('projects.html')
 
 @app.route('/covid_map')
