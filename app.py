@@ -18,12 +18,8 @@ def home():
 def contact():
     return render_template('contact.html')
 
-@app.route('/projects', methods=['GET', 'POST'])
+@app.route('/projects')
 def projects():
-
-    update_form = UpdateForm()
-    if update_form.validate_on_submit:
-        pass
     return render_template('projects.html')
 
 @app.route('/covid_map')
