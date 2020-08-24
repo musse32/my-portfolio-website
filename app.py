@@ -1,14 +1,10 @@
 ## adoption_site.py
 from flask import Flask, render_template,session, redirect, url_for
-from flask_wtf import FlaskForm
-from wtforms import SubmitField
+
 
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'mykey' #Secret key for the forms
-
-class UpdateForm(FlaskForm):
-    update = SubmitField('Update Data')
 
 @app.route('/')
 def home():
